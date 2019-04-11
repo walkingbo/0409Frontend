@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+/*baseball 태그를 테이블로 변환*/
+baseball{display:table;
+border-collapse:collapse;}
+
+/*team을 행으로 변환*/
+team{display:table-row-group;}
+
+/*name과 director는 cell로 변환*/
+name,director{display:table-cell;
+border:2px double black;
+padding:10px;}
+
+</style>
+</head>
+
+<body>
+<!-- xml 형식의 데이터 -->
+<baseball> 
+	
+	<team> 
+			<name>kia</name>
+			<director>김기태</director>
+	</team> 
+	
+	<team> 
+		<name>lg</name> 
+		<director>류중일</director> 
+	</team> 
+	
+	<team>
+		<name>sk</name>
+		<director>염경엽</director>
+	 </team>
+	 
+</body>
+</html>

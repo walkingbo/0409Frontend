@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform(변형-벤더프릭스를 사용)</title>
+<style>
+.transform {
+	width: 200px;
+	height: 200px;
+	background-color: #abc;
+	text-align: center;
+	/*다른 콘텐츠에 영향을 주지 않고 자신만 변환하는 것입니다. */
+	/*-webkit-transform:translate(100px,100px)*/
+	/*-webkit-transform:scale(0.5,0.5) 크기 변환*/
+	/*-webkit-transform:skew(30deg,30deg) 잡아 당김*/
+	-webkit-transform:rotate(45deg) /*회전*/
+}
+li{
+list-style-type:none;
+}
+a{
+/*블록으로 설정*/
+display:block;
+width:200px;
+height:40px;
+/*링크제거*/
+text-decoration:none;
+color:#123456;
+background-color:#abc;
+margin-bottom:4px;
+-webkit-transition:width 2.0s, color 2.0s, transform 3.0s;
+}
+a:hover{
+ width :300px;
+color:blue;
+ -webkit-transform:rotate(540deg);
+}
+
+</style>
+</head>
+<body>
+	<div class="transform">박스변환</div>
+	<ul>
+	<li><a href="#">JavaScript</a></li>
+	<li><a href="#">JavaScript1</a></li>
+	<li><a href="#">JavaScript2</a></li>
+	<li><a href="#">JavaScript3</a></li>
+	<li><a href="#">JavaScript4</a></li>
+	<li><a href="#">JavaScript5</a></li>
+	
+	
+	</ul>
+	
+	
+</body>
+</html>

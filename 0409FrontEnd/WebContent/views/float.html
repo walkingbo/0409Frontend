@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css속성</title>
+<style>
+h1 {
+	/*float를 설정하게 되면 블록요소 좌으에도 다른 콘텐츠를 배치하는 것이 가능*/
+	float: left;
+	background-color: #c00;
+	color: #fff;
+	width: 100px;
+}
+
+.t {
+	width: 300px;
+	border: 1px solid black;
+}
+
+th, td {
+	width: 150px;
+}
+
+/* 화면에 출력할 크기를 설정하고 overflow를auto로 설정하면 출력할 크기보다 큰 콘텐츠를 배치하면
+ 스크롤바가 생겨새 스크롤 할 수 있도록 만들어준다. */
+.scroll {
+	width: 320px;
+	height: 100px;
+	overflow: auto;
+}
+</style>
+
+
+</head>
+<body>
+	<h1>css</h1>
+	<p>웹 페이지에 디자인을 적용하기 위한 개념으로 최근에는 css3가 등장을 해서 애니메이션이나 그림자 기능 등이 추가
+		되서 다양한 형태로 디자인을 적용하는 것이 가능해 졌습니다.</p>
+
+	<table class="t">
+		<tr>
+			<th>종류</th>
+			<th>이름</th>
+		</tr>
+	</table>
+
+	<div class="scroll">
+
+		<table class="t">
+			<tr>
+				<td>운영체제</td>
+				<td>윈도우</td>
+			</tr>
+
+			<tr>
+				<td>언어</td>
+				<td>자바</td>
+			</tr>
+
+			<tr>
+				<td>DB</td>
+				<td>oracle</td>
+			</tr>
+
+			<tr>
+				<td>DB</td>
+				<td>mysql</td>
+			</tr>
+			<tr>
+				<td>DB</td>
+				<td>mysql1</td>
+			</tr>
+
+
+		</table>
+	</div>
+
+</body>
+</html>
